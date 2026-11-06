@@ -1,0 +1,819 @@
+<!DOCTYPE html>
+<html lang="fr" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  
+  <!-- SEO Meta Tags -->
+  <title>Metretech Solutions | Expert en Économie de la Construction - SARL AU</title>
+  <meta name="description" content="Metretech Solutions SARL AU - Expert en métré TCE, DCE, suivi économique. Projets: CFC (8 200 m²), Sofitel Rabat 5★, Zenata, Mall Bouskoura. ICE: 003600794000013">
+  <meta name="keywords" content="métré Maroc, DCE, économie construction, métreur vérificateur, Casablanca, Rabat, BTP, CFC, Sofitel">
+  <meta name="author" content="Zakariaa Karfa Bekali - Metretech Solutions">
+  <meta name="robots" content="index, follow">
+  <meta name="language" content="French">
+  
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://metretech-solutions.ma/">
+  <meta property="og:title" content="Metretech Solutions | Économie de la Construction">
+  <meta property="og:description" content="Projets réalisés: CFC, Sofitel 5★, Zenata, Mall Bouskoura. Devis sous 24h.">
+  <meta property="og:locale" content="fr_MA">
+  
+  <!-- Favicon SVG -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' fill='%230f172a' rx='15'/><text x='50' y='65' font-size='50' text-anchor='middle' fill='white' font-family='Arial' font-weight='bold'>M</text></svg>">
+  
+  <!-- Preconnect Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+  <!-- Schema.org Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "ProfessionalService",
+    "name": "Metretech Solutions",
+    "description": "Cabinet d'économie de la construction et métré TCE au Maroc",
+    "url": "https://metretech-solutions.ma",
+    "telephone": "+212600000000",
+    "email": "metretechsolutions@gmail.com",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "9 Bd Rahal El Meskini, Etg 4, Appt 8, C/o Centre d'Affaires Oussaid",
+      "addressLocality": "Casablanca",
+      "postalCode": "20000",
+      "addressCountry": "MA"
+    },
+    "taxID": "003600794000013",
+    "foundingDate": "2024-11-13",
+    "numberOfEmployees": "1-10"
+  }
+  </script>
+
+  <style>
+    /* ============================================
+       1. VARIABLES & RESET
+    ============================================ */
+    :root {
+      --primary: #0f172a;
+      --primary-dark: #020617;
+      --primary-light: #1e293b;
+      --secondary: #3b82f6;
+      --accent: #f59e0b;
+      --accent-dark: #d97706;
+      --whatsapp: #25D366;
+      --whatsapp-dark: #128C7E;
+      --text-dark: #111827;
+      --text-medium: #4b5563;
+      --text-light: #6b7280;
+      --bg-light: #f9fafb;
+      --bg-blue-light: #eff6ff;
+      --white: #ffffff;
+      --border: #e5e7eb;
+      --shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+      --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+      --shadow-xl: 0 20px 25px -5px rgba(0, 0, 0, 0.1);
+      --radius-sm: 8px;
+      --radius: 12px;
+      --radius-lg: 20px;
+      --container-max: 1200px;
+      --transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+    html { scroll-behavior: smooth; scroll-padding-top: 80px; }
+    body {
+      font-family: 'Inter', system-ui, sans-serif;
+      color: var(--text-dark);
+      line-height: 1.6;
+      background: var(--white);
+      -webkit-font-smoothing: antialiased;
+      overflow-x: hidden;
+    }
+    img { max-width: 100%; display: block; }
+    a { text-decoration: none; color: inherit; }
+    ul { list-style: none; }
+    button { font-family: inherit; cursor: pointer; border: none; background: none; }
+    input, select, textarea { font-family: inherit; }
+    .container { max-width: var(--container-max); margin: 0 auto; padding: 0 20px; }
+
+    /* ============================================
+       2. ANIMATIONS GLOBALES
+    ============================================ */
+    @keyframes fadeInUp { from { opacity: 0; transform: translateY(40px); } to { opacity: 1; transform: translateY(0); } }
+    @keyframes kenburns { 0% { transform: scale(1) translate(0, 0); } 100% { transform: scale(1.15) translate(-2%, -2%); } }
+    @keyframes pulse { 0%, 100% { transform: scale(1); } 50% { transform: scale(1.08); } }
+    @keyframes shimmer { 0% { background-position: -200% 0; } 100% { background-position: 200% 0; } }
+    @keyframes whatsappPulse { 0% { width: 65px; height: 65px; opacity: 0.8; } 100% { width: 130px; height: 130px; opacity: 0; } }
+
+    .fade-in { opacity: 0; transform: translateY(30px); transition: opacity 0.8s ease, transform 0.8s ease; }
+    .fade-in.visible { opacity: 1; transform: translateY(0); }
+
+    /* ============================================
+       3. WATERMARK LOGO (Z-CAD Style)
+    ============================================ */
+    .site-watermark {
+      position: fixed;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 50vw;
+      max-width: 700px;
+      min-width: 300px;
+      opacity: 0.06;
+      z-index: -1;
+      pointer-events: none;
+      mix-blend-mode: difference;
+    }
+    .site-watermark img {
+      width: 100%;
+      height: auto;
+      filter: brightness(0) invert(1);
+    }
+    @media (max-width: 768px) { .site-watermark { width: 80vw; opacity: 0.04; } }
+
+    /* ============================================
+       4. HEADER
+    ============================================ */
+    .header { position: fixed; top: 0; left: 0; right: 0; background: var(--primary); box-shadow: var(--shadow); z-index: 1000; transition: var(--transition); }
+    .header.scrolled { background: rgba(15, 23, 42, 0.98); backdrop-filter: blur(12px); }
+    .navbar { display: flex; justify-content: space-between; align-items: center; padding: 12px 20px; max-width: var(--container-max); margin: 0 auto; }
+    .logo { display: flex; align-items: center; gap: 12px; transition: var(--transition); }
+    .logo:hover { transform: scale(1.05); }
+    .logo img { height: 50px; width: auto; object-fit: contain; border-radius: 8px; }
+    .logo-text { color: var(--white); font-weight: 800; font-size: 1.2rem; letter-spacing: 1px; }
+    .logo:hover .logo-text { color: var(--accent); }
+    .nav-links { display: flex; gap: 28px; align-items: center; }
+    .nav-links a { font-weight: 500; color: var(--white); transition: var(--transition); position: relative; font-size: 0.95rem; padding: 8px 0; }
+    .nav-links a:not(.btn)::after { content: ''; position: absolute; bottom: 0; left: 50%; width: 0; height: 2px; background: var(--accent); transition: all 0.3s ease; transform: translateX(-50%); }
+    .nav-links a:not(.btn):hover::after { width: 100%; }
+    .nav-links a:hover { color: var(--accent); transform: translateY(-2px); }
+    .menu-toggle { display: none; flex-direction: column; gap: 5px; padding: 8px; z-index: 1001; cursor: pointer; }
+    .menu-toggle span { width: 26px; height: 3px; background: var(--white); border-radius: 2px; transition: var(--transition); }
+    .menu-toggle.active span:nth-child(1) { transform: translateY(8px) rotate(45deg); }
+    .menu-toggle.active span:nth-child(2) { opacity: 0; }
+    .menu-toggle.active span:nth-child(3) { transform: translateY(-8px) rotate(-45deg); }
+
+    /* ============================================
+       5. BUTTONS
+    ============================================ */
+    .btn { display: inline-flex; align-items: center; justify-content: center; gap: 8px; padding: 13px 26px; border-radius: var(--radius-sm); font-weight: 600; font-size: 0.95rem; transition: var(--transition); cursor: pointer; white-space: nowrap; }
+    .btn-primary { background: var(--accent); color: var(--white); box-shadow: 0 4px 14px rgba(245, 158, 11, 0.35); }
+    .btn-primary:hover { background: var(--accent-dark); transform: translateY(-3px); box-shadow: 0 8px 25px rgba(245, 158, 11, 0.5); }
+    .btn-whatsapp { background: linear-gradient(135deg, var(--whatsapp) 0%, var(--whatsapp-dark) 100%); color: white; padding: 16px 32px; font-weight: 700; font-size: 1.05rem; box-shadow: 0 6px 20px rgba(37, 211, 102, 0.35); width: 100%; }
+    .btn-whatsapp:hover { transform: translateY(-3px); box-shadow: 0 10px 30px rgba(37, 211, 102, 0.5); }
+    .btn-outline { background: transparent; color: var(--white); border: 2px solid var(--white); }
+    .btn-outline:hover { background: var(--white); color: var(--primary); transform: translateY(-3px); }
+
+    /* ============================================
+       6. HERO
+    ============================================ */
+    .hero { background: linear-gradient(135deg, var(--primary) 0%, var(--primary-dark) 60%, var(--primary-light) 100%); color: var(--white); padding: 150px 20px 110px; position: relative; overflow: hidden; }
+    .hero::before { content: ''; position: absolute; top: 0; left: 0; right: 0; bottom: 0; background: radial-gradient(circle at 20% 30%, rgba(245, 158, 11, 0.1) 0%, transparent 50%), radial-gradient(circle at 80% 70%, rgba(59, 130, 246, 0.1) 0%, transparent 50%); animation: pulse 8s ease-in-out infinite; }
+    .hero::after { content: ''; position: absolute; bottom: -1px; left: 0; right: 0; height: 80px; background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1440 80'%3E%3Cpath fill='%23ffffff' d='M0,32L80,37.3C160,43,320,53,480,53.3C640,53,800,43,960,37.3C1120,32,1280,32,1360,32L1440,32L1440,80L0,80Z'/%3E%3C/svg%3E") no-repeat center bottom; background-size: cover; }
+    .hero-content { max-width: 900px; margin: 0 auto; text-align: center; position: relative; z-index: 2; animation: fadeInUp 1s ease-out; }
+    .hero-badge { display: inline-flex; align-items: center; gap: 8px; background: rgba(255,255,255,0.1); backdrop-filter: blur(10px); padding: 8px 18px; border-radius: 50px; font-size: 0.85rem; font-weight: 500; margin-bottom: 25px; border: 1px solid rgba(255,255,255,0.2); animation: fadeInUp 0.8s ease-out 0.2s both; }
+    .hero h1 { font-size: clamp(2.2rem, 5vw, 3.5rem); font-weight: 900; line-height: 1.15; margin-bottom: 25px; letter-spacing: -1px; animation: fadeInUp 0.8s ease-out 0.4s both; }
+    .hero h1 .highlight { background: linear-gradient(135deg, var(--accent) 0%, #fbbf24 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; background-size: 200% auto; animation: shimmer 3s linear infinite; }
+    .hero p { font-size: clamp(1rem, 1.8vw, 1.2rem); max-width: 750px; margin: 0 auto 40px; opacity: 0.95; line-height: 1.7; animation: fadeInUp 0.8s ease-out 0.6s both; }
+    .hero-buttons { display: flex; gap: 15px; justify-content: center; flex-wrap: wrap; animation: fadeInUp 0.8s ease-out 0.8s both; }
+    .stats-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 20px; max-width: 900px; margin: 70px auto 0; animation: fadeInUp 0.8s ease-out 1s both; }
+    .stat-item { text-align: center; padding: 20px; background: rgba(255,255,255,0.08); backdrop-filter: blur(10px); border-radius: var(--radius); border: 1px solid rgba(255,255,255,0.15); transition: var(--transition); }
+    .stat-item:hover { background: rgba(255,255,255,0.15); transform: translateY(-8px) scale(1.05); border-color: var(--accent); }
+    .stat-number { font-size: 2.5rem; font-weight: 900; color: var(--accent); display: block; margin-bottom: 5px; }
+    .stat-label { font-size: 0.9rem; opacity: 0.9; font-weight: 500; }
+
+    /* ============================================
+       7. SECTIONS COMMON
+    ============================================ */
+    section { padding: 90px 20px; }
+    .section-header { text-align: center; max-width: 700px; margin: 0 auto 60px; }
+    .section-tag { display: inline-block; background: var(--bg-blue-light); color: var(--primary); padding: 6px 16px; border-radius: 50px; font-size: 0.85rem; font-weight: 600; margin-bottom: 15px; text-transform: uppercase; letter-spacing: 0.5px; transition: var(--transition); }
+    .section-tag:hover { background: var(--accent); color: white; transform: translateY(-2px); }
+    .section-title { font-size: clamp(1.8rem, 3.5vw, 2.5rem); font-weight: 800; color: var(--text-dark); margin-bottom: 15px; position: relative; }
+    .section-title::after { content: ''; position: absolute; bottom: -10px; left: 50%; transform: translateX(-50%); width: 60px; height: 4px; background: linear-gradient(90deg, var(--accent), var(--secondary)); border-radius: 2px; }
+    .section-subtitle { font-size: 1.05rem; color: var(--text-light); line-height: 1.7; }
+
+    /* ============================================
+       8. SERVICES
+    ============================================ */
+    .services { background: var(--bg-light); }
+    .services-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(270px, 1fr)); gap: 25px; }
+    .service-card { background: var(--white); padding: 35px 30px; border-radius: var(--radius); box-shadow: var(--shadow); transition: var(--transition); border: 1px solid var(--border); position: relative; overflow: hidden; }
+    .service-card::before { content: ''; position: absolute; top: 0; left: 0; width: 100%; height: 4px; background: linear-gradient(90deg, var(--primary), var(--accent)); transform: scaleX(0); transform-origin: left; transition: transform 0.4s ease; }
+    .service-card:hover { transform: translateY(-12px); box-shadow: var(--shadow-xl); border-color: transparent; }
+    .service-card:hover::before { transform: scaleX(1); }
+    .service-icon { width: 60px; height: 60px; background: var(--bg-blue-light); border-radius: var(--radius); display: flex; align-items: center; justify-content: center; font-size: 1.8rem; margin-bottom: 20px; transition: var(--transition); }
+    .service-card:hover .service-icon { transform: scale(1.1) rotate(5deg); background: var(--accent); }
+    .service-card h3 { font-size: 1.3rem; font-weight: 700; margin-bottom: 12px; color: var(--primary); transition: var(--transition); }
+    .service-card:hover h3 { color: var(--accent); }
+    .service-card p { color: var(--text-medium); font-size: 0.95rem; margin-bottom: 20px; line-height: 1.7; }
+    .service-tags { display: flex; flex-wrap: wrap; gap: 8px; }
+    .tag { background: var(--bg-light); padding: 5px 12px; border-radius: 50px; font-size: 0.8rem; color: var(--text-medium); font-weight: 500; }
+
+    /* ============================================
+       9. PROCESSUS
+    ============================================ */
+    .process-section { background: var(--white); padding: 90px 20px; }
+    .process-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 30px; max-width: var(--container-max); margin: 0 auto; }
+    .process-step { background: var(--bg-light); padding: 35px 25px; border-radius: var(--radius); text-align: center; border: 1px solid var(--border); transition: var(--transition); position: relative; overflow: hidden; }
+    .process-step::before { content: ''; position: absolute; top: 0; left: 0; width: 100%; height: 4px; background: linear-gradient(90deg, var(--primary), var(--accent)); transform: scaleX(0); transform-origin: left; transition: transform 0.4s ease; }
+    .process-step:hover { transform: translateY(-10px); box-shadow: var(--shadow-xl); background: var(--white); }
+    .process-step:hover::before { transform: scaleX(1); }
+    .step-number { position: absolute; top: 15px; right: 20px; font-size: 3rem; font-weight: 900; color: var(--bg-blue-light); line-height: 1; }
+    .process-step:hover .step-number { color: var(--accent); opacity: 0.2; }
+    .step-icon { font-size: 2.5rem; margin-bottom: 15px; transition: var(--transition); }
+    .process-step:hover .step-icon { transform: scale(1.2) rotate(10deg); }
+    .process-step h3 { font-size: 1.2rem; font-weight: 700; color: var(--primary); margin-bottom: 10px; }
+    .process-step p { font-size: 0.9rem; color: var(--text-medium); line-height: 1.6; }
+
+    /* ============================================
+       10. OUTILS
+    ============================================ */
+    .tools-section { background: linear-gradient(135deg, var(--bg-blue-light) 0%, #dbeafe 100%); padding: 80px 20px; text-align: center; }
+    .tools-grid { display: flex; flex-wrap: wrap; justify-content: center; gap: 20px; max-width: 900px; margin: 0 auto; }
+    .tool-badge { background: var(--white); padding: 15px 25px; border-radius: 50px; font-weight: 600; color: var(--primary); box-shadow: var(--shadow); display: flex; align-items: center; gap: 10px; font-size: 1rem; transition: var(--transition); border: 2px solid transparent; }
+    .tool-icon { font-size: 1.3rem; }
+    .tool-badge:hover { transform: translateY(-5px) scale(1.05); border-color: var(--accent); box-shadow: var(--shadow-lg); color: var(--accent-dark); }
+
+    /* ============================================
+       11. PROJETS CAROUSEL
+    ============================================ */
+    .realisations { background: var(--bg-light); overflow: hidden; padding: 90px 0; }
+    .carousel-container { width: 100%; overflow: hidden; position: relative; padding: 20px 0; mask-image: linear-gradient(to right, transparent, black 5%, black 95%, transparent); -webkit-mask-image: linear-gradient(to right, transparent, black 5%, black 95%, transparent); }
+    .carousel-track { display: flex; gap: 30px; width: max-content; animation: scrollProjects 50s linear infinite; }
+    .carousel-track:hover { animation-play-state: paused; }
+    @keyframes scrollProjects { 0% { transform: translateX(0); } 100% { transform: translateX(calc(-50% - 15px)); } }
+    .project-card-dynamic { width: 360px; flex-shrink: 0; background: var(--white); border-radius: var(--radius-lg); overflow: hidden; box-shadow: var(--shadow-lg); transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1); border: 1px solid var(--border); }
+    .project-card-dynamic:hover { transform: translateY(-15px) scale(1.03); box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25); border-color: var(--accent); }
+    .project-image-container { height: 220px; position: relative; overflow: hidden; }
+    .project-image-container img { width: 100%; height: 100%; object-fit: cover; animation: kenburns 12s ease-in-out infinite alternate; }
+    .project-card-dynamic:hover .project-image-container img { animation: none; transform: scale(1.2); }
+    .project-overlay { position: absolute; top: 0; left: 0; right: 0; bottom: 0; background: linear-gradient(to bottom, rgba(0,0,0,0.2), rgba(0,0,0,0.7)); z-index: 1; }
+    .project-badge { position: absolute; top: 20px; left: 20px; background: white; padding: 8px 16px; border-radius: 50px; font-size: 0.8rem; font-weight: 700; color: var(--primary); z-index: 2; transition: var(--transition); }
+    .project-card-dynamic:hover .project-badge { background: var(--accent); color: white; transform: translateY(-3px); }
+    .client-logo { position: absolute; top: 20px; right: 20px; background: rgba(255,255,255,0.95); padding: 8px 14px; border-radius: var(--radius-sm); display: flex; align-items: center; gap: 8px; z-index: 2; box-shadow: var(--shadow); }
+    .client-logo span { font-size: 0.85rem; font-weight: 700; color: var(--text-dark); }
+    .project-info { padding: 25px; }
+    .project-info h3 { font-size: 1.3rem; font-weight: 700; color: var(--primary); margin-bottom: 8px; transition: var(--transition); }
+    .project-card-dynamic:hover .project-info h3 { color: var(--accent); }
+    .project-location { color: var(--text-light); font-size: 0.9rem; margin-bottom: 20px; }
+    .project-stats { display: grid; grid-template-columns: repeat(3, 1fr); gap: 10px; padding-top: 15px; border-top: 2px solid var(--bg-light); }
+    .project-stat { text-align: center; }
+    .project-stat-value { font-size: 1.2rem; font-weight: 800; color: var(--accent); display: block; line-height: 1; margin-bottom: 4px; }
+    .project-stat-label { font-size: 0.7rem; color: var(--text-light); text-transform: uppercase; font-weight: 600; }
+    .project-mission { margin-top: 15px; padding: 12px; background: var(--bg-blue-light); border-radius: var(--radius-sm); border-left: 3px solid var(--primary); }
+    .project-mission p { font-size: 0.8rem; color: var(--text-medium); margin: 0; line-height: 1.5; }
+
+    /* ============================================
+       12. CONFIDENTIALITÉ
+    ============================================ */
+    .confidentiality { background: var(--primary); color: var(--white); padding: 80px 20px; text-align: center; }
+    .confidentiality-wrapper { max-width: 800px; margin: 0 auto; }
+    .confidentiality-icon { font-size: 3.5rem; margin-bottom: 20px; animation: pulse 2s ease-in-out infinite; }
+    .confidentiality h2 { font-size: clamp(1.8rem, 3vw, 2.2rem); margin-bottom: 20px; font-weight: 800; }
+    .confidentiality-text { font-size: 1.1rem; line-height: 1.8; opacity: 0.9; margin-bottom: 30px; }
+    .confidentiality-badges { display: flex; justify-content: center; gap: 15px; flex-wrap: wrap; }
+    .confidentiality-badges .badge { background: rgba(255,255,255,0.1); padding: 12px 24px; border-radius: 50px; font-size: 0.95rem; font-weight: 600; border: 1px solid rgba(255,255,255,0.2); transition: var(--transition); }
+    .confidentiality-badges .badge:hover { background: var(--accent); transform: translateY(-5px); }
+
+    /* ============================================
+       13. ESTIMATEUR WIZARD
+    ============================================ */
+    .estimator { background: linear-gradient(135deg, var(--bg-blue-light) 0%, #dbeafe 100%); }
+    .estimator-container { max-width: 700px; margin: 0 auto; background: var(--white); padding: 40px; border-radius: var(--radius-lg); box-shadow: var(--shadow-xl); }
+    .estimator h2 { text-align: center; font-size: clamp(1.8rem, 3vw, 2.2rem); margin-bottom: 15px; color: var(--primary); }
+    .estimator-intro { text-align: center; color: var(--text-light); margin-bottom: 35px; }
+    .wizard-step { display: none; animation: fadeInUp 0.5s ease-out; }
+    .wizard-step.active { display: block; }
+    .wizard-step h3 { font-size: 1.2rem; color: var(--primary); margin-bottom: 20px; font-weight: 700; }
+    .radio-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 15px; margin-bottom: 25px; }
+    .radio-card { display: flex; align-items: center; gap: 12px; padding: 16px; border: 2px solid var(--border); border-radius: var(--radius-sm); cursor: pointer; transition: var(--transition); font-weight: 500; background: var(--white); }
+    .radio-card:hover { border-color: var(--secondary); background: var(--bg-blue-light); transform: translateX(5px); }
+    .radio-card input[type="radio"] { accent-color: var(--primary); width: 18px; height: 18px; }
+    .radio-card:has(input:checked) { border-color: var(--primary); background: var(--bg-blue-light); box-shadow: 0 0 0 3px rgba(30, 58, 138, 0.1); }
+    .radio-card:has(input:checked) span { color: var(--primary); font-weight: 700; }
+    .form-group { margin-bottom: 20px; }
+    .form-group label { display: block; font-weight: 600; margin-bottom: 8px; }
+    .form-group input, .form-group textarea { width: 100%; padding: 14px 16px; border: 2px solid var(--border); border-radius: var(--radius-sm); font-size: 1rem; transition: var(--transition); }
+    .form-group input:focus, .form-group textarea:focus { outline: none; border-color: var(--secondary); box-shadow: 0 0 0 4px rgba(59, 130, 246, 0.1); }
+    .form-group textarea { resize: vertical; min-height: 100px; }
+    .wizard-nav { display: flex; gap: 15px; margin-top: 25px; }
+    .wizard-nav .btn { flex: 1; }
+
+    /* ============================================
+       14. FAQ
+    ============================================ */
+    .faq-section { background: var(--bg-light); padding: 90px 20px; }
+    .faq-grid { max-width: 800px; margin: 0 auto; display: flex; flex-direction: column; gap: 15px; }
+    .faq-item { background: var(--white); border: 1px solid var(--border); border-radius: var(--radius); padding: 20px 25px; cursor: pointer; transition: var(--transition); box-shadow: var(--shadow-sm); }
+    .faq-item:hover { border-color: var(--accent); box-shadow: var(--shadow); }
+    .faq-item[open] { border-color: var(--primary); }
+    .faq-item summary { font-weight: 700; color: var(--primary); font-size: 1.05rem; list-style: none; display: flex; justify-content: space-between; align-items: center; }
+    .faq-item summary::-webkit-details-marker { display: none; }
+    .faq-item summary::after { content: '+'; font-size: 1.5rem; color: var(--accent); transition: transform 0.3s ease; }
+    .faq-item[open] summary::after { transform: rotate(45deg); }
+    .faq-item p { margin-top: 15px; color: var(--text-medium); line-height: 1.7; font-size: 0.95rem; animation: fadeInUp 0.3s ease-out; }
+
+    /* ============================================
+       15. TESTIMONIALS
+    ============================================ */
+    .testimonials { background: var(--white); }
+    .testimonials-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 25px; }
+    .testimonial-card { background: var(--bg-light); padding: 35px 30px; border-radius: var(--radius); border: 1px solid var(--border); transition: var(--transition); }
+    .testimonial-card:hover { transform: translateY(-10px); box-shadow: var(--shadow-lg); border-color: var(--accent); }
+    .stars { color: var(--accent); font-size: 1.1rem; margin-bottom: 15px; letter-spacing: 2px; }
+    .testimonial-text { color: var(--text-medium); font-size: 0.95rem; line-height: 1.7; margin-bottom: 25px; font-style: italic; }
+    .testimonial-author { display: flex; align-items: center; gap: 15px; }
+    .author-avatar { width: 50px; height: 50px; background: linear-gradient(135deg, var(--primary), var(--secondary)); border-radius: 50%; display: flex; align-items: center; justify-content: center; color: white; font-weight: 700; }
+    .author-info h4 { font-size: 1rem; font-weight: 700; }
+    .author-info p { font-size: 0.85rem; color: var(--text-light); }
+
+    /* ============================================
+       16. CONTACT
+    ============================================ */
+    .contact { background: linear-gradient(135deg, var(--primary) 0%, var(--primary-dark) 100%); color: var(--white); }
+    .contact .section-title { color: var(--white); }
+    .contact .section-subtitle { color: rgba(255,255,255,0.85); }
+    .contact-wrapper { display: grid; grid-template-columns: 1fr 1.2fr; gap: 50px; max-width: var(--container-max); margin: 0 auto; }
+    .contact-item { display: flex; align-items: flex-start; gap: 15px; margin-bottom: 20px; padding: 10px; border-radius: var(--radius-sm); transition: var(--transition); }
+    .contact-item:hover { background: rgba(255,255,255,0.05); transform: translateX(5px); }
+    .contact-icon { width: 42px; height: 42px; background: rgba(255,255,255,0.1); border-radius: 10px; display: flex; align-items: center; justify-content: center; font-size: 1.2rem; flex-shrink: 0; }
+    .contact-item:hover .contact-icon { background: var(--accent); }
+    .contact-item strong { display: block; margin-bottom: 3px; }
+    .contact-item span { opacity: 0.9; }
+
+    /* ============================================
+       17. FOOTER & LINKEDIN
+    ============================================ */
+    .footer { background: #020617; color: var(--white); padding: 60px 20px 30px; }
+    .footer-grid { display: grid; grid-template-columns: 1.5fr 1fr 1fr; gap: 40px; max-width: var(--container-max); margin: 0 auto 40px; }
+    .footer-section h3, .footer-section h4 { font-size: 1.1rem; margin-bottom: 20px; font-weight: 700; }
+    .footer-section p, .footer-section a { color: rgba(255,255,255,0.7); font-size: 0.9rem; line-height: 1.7; }
+    .footer-section ul li { margin-bottom: 10px; }
+    .footer-section a:hover { color: var(--accent); padding-left: 5px; }
+    
+    .linkedin-link {
+      display: flex; align-items: center; gap: 12px; color: rgba(255,255,255,0.8);
+      text-decoration: none; transition: var(--transition); padding: 12px 15px;
+      border-radius: var(--radius-sm); background: rgba(255,255,255,0.05);
+      border: 1px solid rgba(255,255,255,0.1); line-height: 1.3;
+    }
+    .linkedin-link:hover { color: #0A66C2; background: rgba(10, 102, 194, 0.1); border-color: #0A66C2; transform: translateX(5px); }
+    .linkedin-link svg { flex-shrink: 0; transition: var(--transition); }
+    .linkedin-link:hover svg { transform: scale(1.1); }
+
+    .footer-bottom { max-width: var(--container-max); margin: 0 auto; padding-top: 30px; border-top: 1px solid rgba(255,255,255,0.1); text-align: center; color: rgba(255,255,255,0.6); font-size: 0.85rem; }
+    .developer-credit { margin-top: 10px; font-size: 0.85rem; color: #94a3b8; font-weight: 400; letter-spacing: 0.5px; }
+    .brand-zcad { color: var(--accent); font-weight: 700; font-size: 0.95rem; text-transform: uppercase; }
+    .dev-name { color: #e2e8f0; font-weight: 500; }
+
+    /* ============================================
+       18. WHATSAPP FLOAT PRO
+    ============================================ */
+    .whatsapp-float-new { position: fixed; bottom: 25px; right: 25px; width: 65px; height: 65px; background: linear-gradient(135deg, #25D366 0%, #128C7E 100%); color: white; border-radius: 50%; display: flex; align-items: center; justify-content: center; box-shadow: 0 6px 25px rgba(37, 211, 102, 0.5); z-index: 999; transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1); text-decoration: none; }
+    .whatsapp-icon-svg { width: 35px; height: 35px; transition: transform 0.3s ease; z-index: 2; }
+    .whatsapp-float-new:hover { transform: scale(1.15) rotate(10deg); box-shadow: 0 10px 35px rgba(37, 211, 102, 0.7); background: linear-gradient(135deg, #128C7E 0%, #25D366 100%); }
+    .whatsapp-float-new:hover .whatsapp-icon-svg { transform: scale(1.1); }
+    .wa-tooltip-new { position: absolute; right: 75px; background: white; color: #111827; padding: 10px 16px; border-radius: 10px; font-size: 0.85rem; font-weight: 600; box-shadow: 0 4px 15px rgba(0,0,0,0.15); white-space: nowrap; opacity: 0; transform: translateX(10px); transition: all 0.3s ease; pointer-events: none; z-index: 3; }
+    .whatsapp-float-new:hover .wa-tooltip-new { opacity: 1; transform: translateX(0); }
+    .pulse-ring { position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); width: 65px; height: 65px; border-radius: 50%; background: rgba(37, 211, 102, 0.6); animation: whatsappPulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite; z-index: 1; }
+    .pulse-ring.delay { animation-delay: 1s; }
+
+    /* ============================================
+       19. BACK TO TOP
+    ============================================ */
+    .back-to-top { position: fixed; bottom: 100px; left: 25px; width: 50px; height: 50px; background: var(--primary); color: white; border: none; border-radius: 50%; cursor: pointer; box-shadow: 0 4px 15px rgba(15, 23, 42, 0.3); opacity: 0; visibility: hidden; transform: translateY(20px); transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1); z-index: 998; display: flex; align-items: center; justify-content: center; }
+    .back-to-top.visible { opacity: 1; visibility: visible; transform: translateY(0); }
+    .back-to-top:hover { background: var(--accent); transform: translateY(-5px); box-shadow: 0 8px 25px rgba(245, 158, 11, 0.4); }
+    .back-to-top svg { width: 22px; height: 22px; transition: transform 0.3s ease; }
+    .back-to-top:hover svg { transform: translateY(-3px); }
+
+    /* ============================================
+       20. RESPONSIVE
+    ============================================ */
+    @media (max-width: 968px) { .contact-wrapper { grid-template-columns: 1fr; } .footer-grid { grid-template-columns: 1fr 1fr; } .project-card-dynamic { width: 320px; } }
+    @media (max-width: 768px) {
+      .menu-toggle { display: flex; }
+      .nav-links { position: fixed; top: 0; right: -100%; width: 80%; max-width: 320px; height: 100vh; background: var(--primary); flex-direction: column; justify-content: center; align-items: center; gap: 30px; transition: right 0.4s ease; padding: 20px; }
+      .nav-links.active { right: 0; }
+      section { padding: 60px 20px; }
+      .hero { padding: 120px 20px 80px; }
+      .hero h1 { font-size: 2rem; }
+      .hero-buttons { flex-direction: column; width: 100%; }
+      .hero-buttons .btn { width: 100%; }
+      .stats-grid { grid-template-columns: repeat(2, 1fr); }
+      .stat-number { font-size: 2rem; }
+      .estimator-container { padding: 25px 20px; }
+      .radio-grid { grid-template-columns: 1fr; }
+      .footer-grid { grid-template-columns: 1fr; text-align: center; }
+      .project-card-dynamic { width: 280px; }
+      .project-image-container { height: 180px; }
+      .whatsapp-float-new { width: 58px; height: 58px; bottom: 20px; right: 20px; }
+      .whatsapp-icon-svg { width: 30px; height: 30px; }
+      .pulse-ring { width: 58px; height: 58px; }
+      @keyframes whatsappPulse { 0% { width: 58px; height: 58px; opacity: 0.8; } 100% { width: 115px; height: 115px; opacity: 0; } }
+      .wa-tooltip-new { display: none; }
+      .back-to-top { bottom: 90px; left: 15px; width: 45px; height: 45px; }
+      .back-to-top svg { width: 20px; height: 20px; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- WATERMARK LOGO -->
+  <div class="site-watermark" aria-hidden="true">
+    <img src="assets/images/logo-metretech-transparent.png" alt="Metretech Watermark">
+  </div>
+
+  <!-- HEADER -->
+  <header class="header" id="header">
+    <nav class="navbar">
+      <a href="#accueil" class="logo">
+        <img src="assets/images/logo-metretech.jpg" alt="Metretech Solutions">
+        <span class="logo-text">METRETECH</span>
+      </a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#accueil">Accueil</a></li>
+        <li><a href="#services">Prestations</a></li>
+        <li><a href="#projets">Projets</a></li>
+        <li><a href="#simulateur">Estimateur</a></li>
+        <li><a href="#faq">FAQ</a></li>
+        <li><a href="#temoignages">Références</a></li>
+        <li><a href="#contact" class="btn btn-primary">Devis Gratuit</a></li>
+      </ul>
+      <button class="menu-toggle" id="menuToggle" aria-label="Menu"><span></span><span></span><span></span></button>
+    </nav>
+  </header>
+
+  <main>
+    <!-- HERO -->
+    <section id="accueil" class="hero">
+      <div class="hero-content">
+        <div class="hero-badge">✓ SARL AU - Capital 100 000 DHS | ICE: 003600794000013</div>
+        <h1>Maîtrise des Coûts &<br><span class="highlight">Ingénierie Quantitative</span></h1>
+        <p>Partenaire de confiance des promoteurs et bureaux d'études. Projets réalisés: CFC (8 200 m²), Sofitel Rabat 5★, Zenata, Mall Bouskoura.</p>
+        <div class="hero-buttons">
+          <a href="#simulateur" class="btn btn-primary">Demander une Étude →</a>
+          <a href="#projets" class="btn btn-outline">Nos Réalisations</a>
+        </div>
+        <div class="stats-grid">
+          <div class="stat-item"><span class="stat-number">8 200</span><span class="stat-label">m² Gérés (CFC)</span></div>
+          <div class="stat-item"><span class="stat-number">5</span><span class="stat-label">Projets Majeurs</span></div>
+          <div class="stat-item"><span class="stat-number">100%</span><span class="stat-label">Confidentialité</span></div>
+          <div class="stat-item"><span class="stat-number">24h</span><span class="stat-label">Délai de Réponse</span></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SERVICES -->
+    <section id="services" class="services">
+      <div class="container">
+        <div class="section-header fade-in">
+          <span class="section-tag">Nos Expertises</span>
+          <h2 class="section-title">Prestations d'Excellence</h2>
+          <p class="section-subtitle">Une externalisation fiable et structurée pour répondre aux exigences des maîtres d'ouvrage et bureaux d'études.</p>
+        </div>
+        <div class="services-grid">
+          <article class="service-card fade-in"><div class="service-icon">📐</div><h3>Métré & Étude Quantitative</h3><p>Quantification rigoureuse à partir des plans APS, APD, PRO ou EXE. Élaboration des DQE et BPU conformes.</p><div class="service-tags"><span class="tag">Gros Œuvre</span><span class="tag">Second Œuvre</span><span class="tag">TCE</span></div></article>
+          <article class="service-card fade-in"><div class="service-icon">📝</div><h3>Rédaction des DCE</h3><p>Constitution complète des Dossiers de Consultation : CCTP, cadres de déboursé sec, et estimations.</p><div class="service-tags"><span class="tag">CCTP</span><span class="tag">Estimations</span><span class="tag">Appels d'offres</span></div></article>
+          <article class="service-card fade-in"><div class="service-icon">🔍</div><h3>Analyse des Offres</h3><p>Comparaison technique et financière détaillée. Détection des erreurs et vérification de la cohérence.</p><div class="service-tags"><span class="tag">Comparatif</span><span class="tag">Négociation</span><span class="tag">Aide à la décision</span></div></article>
+          <article class="service-card fade-in"><div class="service-icon">💰</div><h3>Suivi Économique & DGD</h3><p>Vérification des situations de travaux, contrôle des attachements, gestion des avenants et calcul des DGD.</p><div class="service-tags"><span class="tag">Situations</span><span class="tag">Attachements</span><span class="tag">DGD</span></div></article>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROCESSUS -->
+    <section class="process-section">
+      <div class="container">
+        <div class="section-header fade-in">
+          <span class="section-tag">Notre Méthodologie</span>
+          <h2 class="section-title">Notre Processus en 4 Étapes</h2>
+          <p class="section-subtitle">Une approche structurée pour garantir la précision et la confidentialité de vos projets.</p>
+        </div>
+        <div class="process-grid">
+          <div class="process-step fade-in"><div class="step-number">01</div><div class="step-icon">📥</div><h3>Réception & Analyse</h3><p>Analyse approfondie de vos plans (APS, APD, PRO, EXE) et de vos besoins spécifiques.</p></div>
+          <div class="process-step fade-in"><div class="step-number">02</div><div class="step-icon">📐</div><h3>Quantification & Métré</h3><p>Extraction rigoureuse des quantités avec nos outils internes et macros LISP pour une rapidité optimale.</p></div>
+          <div class="process-step fade-in"><div class="step-number">03</div><div class="step-icon">🔍</div><h3>Contrôle Qualité</h3><p>Vérification croisée des données, cohérence des prix unitaires et respect des normes NM/DGD.</p></div>
+          <div class="process-step fade-in"><div class="step-number">04</div><div class="step-icon">🔒</div><h3>Livraison Sécurisée</h3><p>Remise des livrables (DQE, DCE, DGD) via un canal 100% confidentiel et sécurisé.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- OUTILS -->
+    <section class="tools-section">
+      <div class="container">
+        <div class="section-header fade-in">
+          <span class="section-tag">Notre Stack Technique</span>
+          <h2 class="section-title">Outils & Technologies Maîtrisés</h2>
+          <p class="section-subtitle">Nous combinons l'expertise humaine avec la puissance des logiciels les plus avancés du marché.</p>
+        </div>
+        <div class="tools-grid fade-in">
+          <div class="tool-badge"><span class="tool-icon">📐</span> AutoCAD 2D/3D</div>
+          <div class="tool-badge"><span class="tool-icon">💻</span> AutoLISP (Z-CAD Tools)</div>
+          <div class="tool-badge"><span class="tool-icon">📊</span> Excel Avancé & VBA</div>
+          <div class="tool-badge"><span class="tool-icon">🏗️</span> Revit (BIM)</div>
+          <div class="tool-badge"><span class="tool-icon">📅</span> MS Project</div>
+          <div class="tool-badge"><span class="tool-icon">📑</span> Normes NM & DGD</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROJETS CAROUSEL -->
+    <section id="projets" class="realisations">
+      <div class="container">
+        <div class="section-header fade-in">
+          <span class="section-tag">Portfolio</span>
+          <h2 class="section-title">Nos Projets Réalisés</h2>
+          <p class="section-subtitle">Découvrez nos dernières missions réalisées à travers le Maroc avec excellence et confidentialité.</p>
+        </div>
+      </div>
+      <div class="carousel-container">
+        <div class="carousel-track">
+          <div class="project-card-dynamic fade-in"><div class="project-image-container"><img src="assets/images/projet-cfc-casablanca.jpg" alt="CFC" loading="lazy"><div class="project-overlay"></div><div class="project-badge">Tertiaire</div><div class="client-logo"><span>🏦 Société Générale</span></div></div><div class="project-info"><h3>Siège Social - CFC</h3><p class="project-location">📍 Casablanca Finance City</p><div class="project-stats"><div class="project-stat"><span class="project-stat-value">8 200</span><span class="project-stat-label">m² Surface</span></div><div class="project-stat"><span class="project-stat-value">5</span><span class="project-stat-label">Étages</span></div><div class="project-stat"><span class="project-stat-value">650</span><span class="project-stat-label">Postes</span></div></div><div class="project-mission"><p><strong>Mission:</strong> Métrés TCE, DCE & CCTP, Budgétisation.</p></div></div></div>
+          <div class="project-card-dynamic fade-in"><div class="project-image-container"><img src="assets/images/projet-sofitel-rabat.jpg" alt="Sofitel" loading="lazy"><div class="project-overlay"></div><div class="project-badge">Hôtellerie 5★</div><div class="client-logo"><span>🌟 Sofitel</span></div></div><div class="project-info"><h3>Sofitel Jardin des Roses</h3><p class="project-location">📍 Rabat - Hôtel 5 étoiles</p><div class="project-stats"><div class="project-stat"><span class="project-stat-value">5★</span><span class="project-stat-label">Catégorie</span></div><div class="project-stat"><span class="project-stat-value">HPM</span><span class="project-stat-label">Partenaire</span></div><div class="project-stat"><span class="project-stat-value">DCE</span><span class="project-stat-label">Mission</span></div></div><div class="project-mission"><p><strong>Mission:</strong> Accompagnement HPM, Suivi budgétaire.</p></div></div></div>
+          <div class="project-card-dynamic fade-in"><div class="project-image-container"><img src="assets/images/projet-zenata-immobilier.jpg" alt="Zenata" loading="lazy"><div class="project-overlay"></div><div class="project-badge">Résidentiel</div><div class="client-logo"><span>🏘️ Zenata</span></div></div><div class="project-info"><h3>Projet Immobilier Zenata</h3><p class="project-location">📍 Zenata - Conception d'exception</p><div class="project-stats"><div class="project-stat"><span class="project-stat-value">2</span><span class="project-stat-label">R+10</span></div><div class="project-stat"><span class="project-stat-value">3</span><span class="project-stat-label">R+4</span></div><div class="project-stat"><span class="project-stat-value">DCE</span><span class="project-stat-label">Mission</span></div></div><div class="project-mission"><p><strong>Mission:</strong> Chiffrage, Établissement des DCE.</p></div></div></div>
+          <div class="project-card-dynamic fade-in"><div class="project-image-container"><img src="assets/images/projet-mall-bosko-bouskoura.jpg" alt="BOSKO" loading="lazy"><div class="project-overlay"></div><div class="project-badge">Commercial</div><div class="client-logo"><span>🏬 BOSKO</span></div></div><div class="project-info"><h3>Mall de Bouskoura</h3><p class="project-location">📍 Bouskoura - Projet structurant</p><div class="project-stats"><div class="project-stat"><span class="project-stat-value">Mall</span><span class="project-stat-label">Type</span></div><div class="project-stat"><span class="project-stat-value">DCE</span><span class="project-stat-label">Mission</span></div><div class="project-stat"><span class="project-stat-value">2025</span><span class="project-stat-label">Année</span></div></div><div class="project-mission"><p><strong>Mission:</strong> Préparation des DCE, Accompagnement financier.</p></div></div></div>
+          <div class="project-card-dynamic fade-in"><div class="project-image-container"><img src="assets/images/projet-centre-appel-fes.jpg" alt="Fès" loading="lazy"><div class="project-overlay"></div><div class="project-badge">Tertiaire</div><div class="client-logo"><span>📞 Fès</span></div></div><div class="project-info"><h3>Centre d'Appel</h3><p class="project-location">📍 Fès - Bâtiment moderne</p><div class="project-stats"><div class="project-stat"><span class="project-stat-value">R+7</span><span class="project-stat-label">+ S.Sol</span></div><div class="project-stat"><span class="project-stat-value">DCE</span><span class="project-stat-label">Mission</span></div><div class="project-stat"><span class="project-stat-value">2025</span><span class="project-stat-label">Année</span></div></div><div class="project-mission"><p><strong>Mission:</strong> DCE complet, Analyse, Quantitatifs.</p></div></div></div>
+          <!-- DUPLICATA POUR L'EFFET INFINI -->
+          <div class="project-card-dynamic fade-in"><div class="project-image-container"><img src="assets/images/projet-cfc-casablanca.jpg" alt="CFC" loading="lazy"><div class="project-overlay"></div><div class="project-badge">Tertiaire</div><div class="client-logo"><span>🏦 Société Générale</span></div></div><div class="project-info"><h3>Siège Social - CFC</h3><p class="project-location">📍 Casablanca Finance City</p><div class="project-stats"><div class="project-stat"><span class="project-stat-value">8 200</span><span class="project-stat-label">m² Surface</span></div><div class="project-stat"><span class="project-stat-value">5</span><span class="project-stat-label">Étages</span></div><div class="project-stat"><span class="project-stat-value">650</span><span class="project-stat-label">Postes</span></div></div><div class="project-mission"><p><strong>Mission:</strong> Métrés TCE, DCE & CCTP, Budgétisation.</p></div></div></div>
+          <div class="project-card-dynamic fade-in"><div class="project-image-container"><img src="assets/images/projet-sofitel-rabat.jpg" alt="Sofitel" loading="lazy"><div class="project-overlay"></div><div class="project-badge">Hôtellerie 5★</div><div class="client-logo"><span>🌟 Sofitel</span></div></div><div class="project-info"><h3>Sofitel Jardin des Roses</h3><p class="project-location">📍 Rabat - Hôtel 5 étoiles</p><div class="project-stats"><div class="project-stat"><span class="project-stat-value">5★</span><span class="project-stat-label">Catégorie</span></div><div class="project-stat"><span class="project-stat-value">HPM</span><span class="project-stat-label">Partenaire</span></div><div class="project-stat"><span class="project-stat-value">DCE</span><span class="project-stat-label">Mission</span></div></div><div class="project-mission"><p><strong>Mission:</strong> Accompagnement HPM, Suivi budgétaire.</p></div></div></div>
+          <div class="project-card-dynamic fade-in"><div class="project-image-container"><img src="assets/images/projet-zenata-immobilier.jpg" alt="Zenata" loading="lazy"><div class="project-overlay"></div><div class="project-badge">Résidentiel</div><div class="client-logo"><span>🏘️ Zenata</span></div></div><div class="project-info"><h3>Projet Immobilier Zenata</h3><p class="project-location">📍 Zenata - Conception d'exception</p><div class="project-stats"><div class="project-stat"><span class="project-stat-value">2</span><span class="project-stat-label">R+10</span></div><div class="project-stat"><span class="project-stat-value">3</span><span class="project-stat-label">R+4</span></div><div class="project-stat"><span class="project-stat-value">DCE</span><span class="project-stat-label">Mission</span></div></div><div class="project-mission"><p><strong>Mission:</strong> Chiffrage, Établissement des DCE.</p></div></div></div>
+          <div class="project-card-dynamic fade-in"><div class="project-image-container"><img src="assets/images/projet-mall-bosko-bouskoura.jpg" alt="BOSKO" loading="lazy"><div class="project-overlay"></div><div class="project-badge">Commercial</div><div class="client-logo"><span>🏬 BOSKO</span></div></div><div class="project-info"><h3>Mall de Bouskoura</h3><p class="project-location">📍 Bouskoura - Projet structurant</p><div class="project-stats"><div class="project-stat"><span class="project-stat-value">Mall</span><span class="project-stat-label">Type</span></div><div class="project-stat"><span class="project-stat-value">DCE</span><span class="project-stat-label">Mission</span></div><div class="project-stat"><span class="project-stat-value">2025</span><span class="project-stat-label">Année</span></div></div><div class="project-mission"><p><strong>Mission:</strong> Préparation des DCE, Accompagnement financier.</p></div></div></div>
+          <div class="project-card-dynamic fade-in"><div class="project-image-container"><img src="assets/images/projet-centre-appel-fes.jpg" alt="Fès" loading="lazy"><div class="project-overlay"></div><div class="project-badge">Tertiaire</div><div class="client-logo"><span>📞 Fès</span></div></div><div class="project-info"><h3>Centre d'Appel</h3><p class="project-location">📍 Fès - Bâtiment moderne</p><div class="project-stats"><div class="project-stat"><span class="project-stat-value">R+7</span><span class="project-stat-label">+ S.Sol</span></div><div class="project-stat"><span class="project-stat-value">DCE</span><span class="project-stat-label">Mission</span></div><div class="project-stat"><span class="project-stat-value">2025</span><span class="project-stat-label">Année</span></div></div><div class="project-mission"><p><strong>Mission:</strong> DCE complet, Analyse, Quantitatifs.</p></div></div></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONFIDENTIALITÉ -->
+    <section class="confidentiality">
+      <div class="container">
+        <div class="confidentiality-wrapper fade-in">
+          <div class="confidentiality-icon">🔒</div>
+          <h2>Engagement de Confidentialité Absolue</h2>
+          <p class="confidentiality-text">En tant que partenaire technique stratégique, nous considérons que <strong>vos chiffres, vos plans et vos marges n'appartiennent qu'à vous</strong>. Pour préserver l'anonymat de vos sous-traitances, <strong>aucun document, montant ou élément de projet ne sort de notre espace de collaboration</strong>.</p>
+          <div class="confidentiality-badges">
+            <div class="badge">✓ Zéro fuite de données</div>
+            <div class="badge">✓ Chiffres strictement protégés</div>
+            <div class="badge">✓ Aucun usage commercial de vos plans</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ESTIMATEUR WIZARD -->
+    <section id="simulateur" class="estimator">
+      <div class="container">
+        <div class="estimator-container fade-in">
+          <h2>Estimateur Rapide de Projet</h2>
+          <p class="estimator-intro">Décrivez votre besoin en 3 étapes. Notre expert vous recontacte avec une estimation personnalisée sous 24h.</p>
+          <form id="wizardForm">
+            <div class="wizard-step active" data-step="1">
+              <h3>1. Type de prestation requise *</h3>
+              <div class="radio-grid">
+                <label class="radio-card"><input type="radio" name="prestation" value="Métré & Étude Quantitative (DQE)" required><span>📐 Métré & DQE</span></label>
+                <label class="radio-card"><input type="radio" name="prestation" value="Décompte & Vérification Chantier"><span>💰 Décompte & Vérification</span></label>
+                <label class="radio-card"><input type="radio" name="prestation" value="Rédaction DCE / CCTP"><span>📝 DCE / CCTP</span></label>
+                <label class="radio-card"><input type="radio" name="prestation" value="Analyse des Offres"><span>🔍 Analyse des Offres</span></label>
+                <label class="radio-card"><input type="radio" name="prestation" value="Suivi Économique & DGD"><span>📊 Suivi Économique</span></label>
+              </div>
+              <button type="button" class="btn btn-primary next-step" style="width:100%">Suivant →</button>
+            </div>
+            <div class="wizard-step" data-step="2">
+              <h3>2. Périmètre technique *</h3>
+              <div class="radio-grid">
+                <label class="radio-card"><input type="radio" name="perimetre" value="Gros Œuvre (GO)" required><span>🧱 Gros Œuvre (GO)</span></label>
+                <label class="radio-card"><input type="radio" name="perimetre" value="Second Œuvre / Lots Architecturaux"><span>🚪 Second Œuvre</span></label>
+                <label class="radio-card"><input type="radio" name="perimetre" value="TCE (Tous Corps d'État)"><span>🏢 TCE</span></label>
+                <label class="radio-card"><input type="radio" name="perimetre" value="Développement LISP / Z-CAD"><span>💻 Z-CAD Tools</span></label>
+              </div>
+              <div class="wizard-nav">
+                <button type="button" class="btn btn-outline prev-step">← Précédent</button>
+                <button type="button" class="btn btn-primary next-step">Suivant →</button>
+              </div>
+            </div>
+            <div class="wizard-step" data-step="3">
+              <h3>3. Vos coordonnées & Détails</h3>
+              <div class="form-group"><label for="w_surface">Surface approximative (m²)</label><input type="number" id="w_surface" placeholder="Ex: 500" inputmode="numeric"></div>
+              <div class="form-group"><label for="w_ville">Ville du projet</label><input type="text" id="w_ville" placeholder="Ex: Casablanca, Rabat..."></div>
+              <div class="form-group"><label for="w_details">Détails supplémentaires</label><textarea id="w_details" rows="3" placeholder="Décrivez brièvement votre besoin..."></textarea></div>
+              <div class="wizard-nav">
+                <button type="button" class="btn btn-outline prev-step">← Précédent</button>
+                <button type="submit" class="btn btn-whatsapp">💬 Envoyer via WhatsApp</button>
+              </div>
+              <p style="text-align: center; font-size: 0.8rem; color: var(--text-light); margin-top: 15px;">🔒 Vos données restent strictement confidentielles.</p>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section id="faq" class="faq-section">
+      <div class="container">
+        <div class="section-header fade-in">
+          <span class="section-tag">FAQ</span>
+          <h2 class="section-title">Questions Fréquentes</h2>
+          <p class="section-subtitle">Les réponses aux questions les plus posées par nos clients.</p>
+        </div>
+        <div class="faq-grid fade-in">
+          <details class="faq-item">
+            <summary>Quel est le délai moyen pour un DQE ou un DCE ?</summary>
+            <p>Le délai dépend de la complexité et de la surface du projet. En moyenne, un DQE pour un R+4 standard est livré sous 48h à 72h. Pour les grands projets (type CFC), nous établissons un planning personnalisé.</p>
+          </details>
+          <details class="faq-item">
+            <summary>Travaillez-vous avec des logiciels BIM (Revit) ?</summary>
+            <p>Oui, nous maîtrisons Revit (BIM) pour les projets complexes, mais notre expertise principale repose sur AutoCAD 2D/3D et nos outils internes AutoLISP (Z-CAD) qui garantissent une rapidité et une précision optimales pour le métré TCE.</p>
+          </details>
+          <details class="faq-item">
+            <summary>Comment garantissez-vous la confidentialité de nos plans ?</summary>
+            <p>Nous signons systématiquement un accord de confidentialité (NDA). Aucun plan, aucun montant et aucun détail de votre projet n'est partagé, utilisé à des fins commerciales ou stocké sur des serveurs non sécurisés.</p>
+          </details>
+          <details class="faq-item">
+            <summary>Intervenez-vous sur tout le Maroc ?</summary>
+            <p>Oui, bien que notre siège soit à Casablanca, nous intervenons sur tous les projets au Maroc (Rabat, Tanger, Fès, Marrakech, etc.) en mode remote ou avec des déplacements sur site selon les besoins.</p>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <!-- TÉMOIGNAGES -->
+    <section id="temoignages" class="testimonials">
+      <div class="container">
+        <div class="section-header fade-in">
+          <span class="section-tag">Témoignages</span>
+          <h2 class="section-title">Ils nous font confiance</h2>
+          <p class="section-subtitle">La confidentialité est notre priorité. Voici des retours anonymisés de nos partenaires.</p>
+        </div>
+        <div class="testimonials-grid">
+          <div class="testimonial-card fade-in"><div class="stars">★★★★★</div><p class="testimonial-text">"Un travail d'une précision remarquable sur notre projet de 40 logements. Les DQE étaient parfaitement alignés avec les réalités du chantier."</p><div class="testimonial-author"><div class="author-avatar">P</div><div class="author-info"><h4>Promoteur Immobilier</h4><p>Casablanca, Projet R+5</p></div></div></div>
+          <div class="testimonial-card fade-in"><div class="stars">★★★★★</div><p class="testimonial-text">"Réactivité impressionnante. Nous avions un appel d'offres urgent en 48h, l'équipe a livré le CCTP et l'estimation dans les temps."</p><div class="testimonial-author"><div class="author-avatar">B</div><div class="author-info"><h4>Bureau d'Études Techniques</h4><p>Rabat, Marché Public</p></div></div></div>
+          <div class="testimonial-card fade-in"><div class="stars">★★★★★</div><p class="testimonial-text">"Le suivi économique mensuel et la vérification des attachements nous ont permis de garder un contrôle total sur les dépenses."</p><div class="testimonial-author"><div class="author-avatar">M</div><div class="author-info"><h4>Maître d'Ouvrage Délégué</h4><p>Tanger, Zone Industrielle</p></div></div></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="contact">
+      <div class="container">
+        <div class="section-header fade-in">
+          <span class="section-tag" style="background:rgba(255,255,255,0.15); color:white;">Contact</span>
+          <h2 class="section-title">Demandez votre Étude</h2>
+          <p class="section-subtitle">Décrivez votre besoin, nous vous répondons avec une proposition méthodologique sous 24h.</p>
+        </div>
+        <div class="contact-wrapper">
+          <div class="fade-in">
+            <h3 style="font-size:1.5rem; margin-bottom:25px; font-weight:700;">Coordonnées</h3>
+            <div class="contact-item"><div class="contact-icon">📍</div><div><strong>Siège Social</strong><span>9 Bd Rahal El Meskini, Etg 4, Appt 8<br>C/o Centre d'Affaires Oussaid<br>20000 Casablanca, Maroc</span></div></div>
+            <div class="contact-item"><div class="contact-icon">✉️</div><div><strong>Email</strong><span>metretechsolutions@gmail.com</span></div></div>
+            <div class="contact-item"><div class="contact-icon">📞</div><div><strong>Téléphone</strong><span>+212 6 XX XX XX XX</span></div></div>
+            <div class="contact-item"><div class="contact-icon">💼</div><div><strong>Identité Juridique</strong><span>SARL à Associé Unique<br>RC: 647017 - Tribunal de Casablanca<br>ICE: 003600794000013<br>Capital: 100 000 DHS</span></div></div>
+          </div>
+          <div class="fade-in" style="background:var(--white); padding:40px; border-radius:var(--radius-lg); box-shadow:var(--shadow-xl);">
+            <p style="color:var(--text-dark); margin-bottom:20px; font-weight:600;">Préférez-vous un contact direct ?</p>
+            <a href="https://wa.me/212600000000?text=Bonjour%20Metretech" class="btn btn-whatsapp" target="_blank" rel="noopener" style="margin-bottom:15px;">💬 Discuter sur WhatsApp maintenant</a>
+            <p style="color:var(--text-light); font-size:0.9rem;">Ou utilisez l'Estimateur Rapide ci-dessus pour une demande structurée.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer-grid">
+      <div class="footer-section">
+        <h3>METRETECH SOLUTIONS</h3>
+        <p>Cabinet d'économie de la construction et métré TCE. Projets réalisés: CFC, Sofitel Rabat, Zenata, Mall Bouskoura, Centre d'appel Fès.</p>
+        <p style="margin-top:15px;"><strong>RC:</strong> 647017 | <strong>ICE:</strong> 003600794000013<br><strong>Forme:</strong> SARL AU | <strong>Capital:</strong> 100 000 DHS</p>
+      </div>
+      <div class="footer-section">
+        <h4>Navigation</h4>
+        <ul>
+          <li><a href="#accueil">Accueil</a></li>
+          <li><a href="#services">Prestations</a></li>
+          <li><a href="#projets">Projets Réalisés</a></li>
+          <li><a href="#simulateur">Estimateur</a></li>
+          <li><a href="#faq">FAQ</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-section">
+        <h4>Suivez-nous</h4>
+        <a href="https://www.linkedin.com/in/metretech-solutions-%C3%A9conomie-de-la-construction-b6b22a335/" target="_blank" rel="noopener noreferrer" class="linkedin-link">
+          <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
+          </svg>
+          <span>Metretech Solutions<br><small style="font-size: 0.75rem; opacity: 0.7;">Économie de la construction</small></span>
+        </a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2026 Metretech Solutions SARL AU. Tous droits réservés.</p>
+      <p class="developer-credit">
+        Développé par <span class="brand-zcad">Z-Cad</span> | 
+        <span class="dev-name">Zakariaa Karfa Bekali</span>
+      </p>
+    </div>
+  </footer>
+
+  <!-- WHATSAPP FLOAT PRO -->
+  <a href="https://wa.me/212600000000?text=السلام%20عليكم!%20بغيت%20نستافس%20على%20خدمة%20الميتراج%20و%20الاقتصاد%20البناء" 
+     class="whatsapp-float-new" 
+     target="_blank" 
+     rel="noopener noreferrer" 
+     aria-label="تواصل معنا عبر WhatsApp">
+    <svg class="whatsapp-icon-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="white">
+      <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/>
+    </svg>
+    <span class="wa-tooltip-new">السلام! كيتقاش الميتراج؟ 📱</span>
+    <span class="pulse-ring"></span>
+    <span class="pulse-ring delay"></span>
+  </a>
+
+  <!-- BACK TO TOP -->
+  <button id="backToTop" class="back-to-top" aria-label="الرجوع للأعلى">
+    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+      <polyline points="18 15 12 9 6 15"></polyline>
+    </svg>
+  </button>
+
+  <script>
+    // ⚠️ BDDAL HAD L'NUMÉRO B L'NUMÉRO L'7A9I9I
+    const WHATSAPP_NUMBER = "212600000000";
+
+    const header = document.getElementById('header');
+    window.addEventListener('scroll', () => { header.classList.toggle('scrolled', window.scrollY > 50); }, { passive: true });
+
+    const menuToggle = document.getElementById('menuToggle');
+    const navLinks = document.getElementById('navLinks');
+    menuToggle.addEventListener('click', () => {
+      const isExpanded = menuToggle.getAttribute('aria-expanded') === 'true';
+      menuToggle.setAttribute('aria-expanded', !isExpanded);
+      menuToggle.classList.toggle('active');
+      navLinks.classList.toggle('active');
+    });
+    document.querySelectorAll('.nav-links a').forEach(link => {
+      link.addEventListener('click', () => { menuToggle.classList.remove('active'); navLinks.classList.remove('active'); menuToggle.setAttribute('aria-expanded', 'false'); });
+    });
+
+    const fadeObserver = new IntersectionObserver((entries) => {
+      entries.forEach(entry => { if (entry.isIntersecting) { entry.target.classList.add('visible'); fadeObserver.unobserve(entry.target); } });
+    }, { threshold: 0.1, rootMargin: '0px 0px -50px 0px' });
+    document.querySelectorAll('.fade-in').forEach(el => fadeObserver.observe(el));
+
+    const wizardForm = document.getElementById('wizardForm');
+    const steps = wizardForm.querySelectorAll('.wizard-step');
+    let currentStep = 0;
+
+    function showStep(stepIndex) { steps.forEach((step, index) => { step.classList.toggle('active', index === stepIndex); }); }
+
+    wizardForm.querySelectorAll('.next-step').forEach(btn => {
+      btn.addEventListener('click', () => {
+        const currentStepEl = steps[currentStep];
+        const radios = currentStepEl.querySelectorAll('input[type="radio"]');
+        if (radios.length > 0) {
+          let isChecked = false;
+          radios.forEach(radio => { if (radio.checked) isChecked = true; });
+          if (!isChecked) { alert('Veuillez sélectionner une option pour continuer.'); return; }
+        }
+        if (currentStep < steps.length - 1) { currentStep++; showStep(currentStep); }
+      });
+    });
+
+    wizardForm.querySelectorAll('.prev-step').forEach(btn => {
+      btn.addEventListener('click', () => { if (currentStep > 0) { currentStep--; showStep(currentStep); } });
+    });
+
+    wizardForm.addEventListener('submit', function(e) {
+      e.preventDefault();
+      const prestation = wizardForm.querySelector('input[name="prestation"]:checked')?.value || 'Non précisé';
+      const perimetre = wizardForm.querySelector('input[name="perimetre"]:checked')?.value || 'Non précisé';
+      const surface = document.getElementById('w_surface').value || 'Non précisée';
+      const ville = document.getElementById('w_ville').value || 'Non précisée';
+      const details = document.getElementById('w_details').value || 'Aucun détail supplémentaire';
+
+      const message = `🏗️ *NOUVELLE DEMANDE D'ÉTUDE - METRETECH*\n\n📋 *Prestation :* ${prestation}\n📐 *Périmètre :* ${perimetre}\n📏 *Surface :* ${surface} m²\n📍 *Ville :* ${ville}\n\n📝 *Détails :*\n${details}\n\n---\n🔒 Demande sécurisée et confidentielle.\n📅 Réponse attendue sous 24h.`;
+      const whatsappURL = `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(message)}`;
+      window.open(whatsappURL, '_blank');
+    });
+
+    // BACK TO TOP LOGIC
+    const backToTopBtn = document.getElementById('backToTop');
+    window.addEventListener('scroll', () => {
+      if (window.scrollY > 500) {
+        backToTopBtn.classList.add('visible');
+      } else {
+        backToTopBtn.classList.remove('visible');
+      }
+    }, { passive: true });
+    backToTopBtn.addEventListener('click', () => {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    });
+
+    console.log('%c🏗️ Metretech Solutions', 'font-size: 24px; font-weight: bold; color: #0f172a;');
+    console.log('%cDéveloppé par Z-Cad | Zakariaa Karfa Bekali 💪', 'font-size: 12px; color: #f59e0b;');
+  </script>
+</body>
+</html>
